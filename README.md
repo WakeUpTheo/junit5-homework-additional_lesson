@@ -1,1 +1,1 @@
-# junit5-homework-additional_lesson
+# Junit5 homework. Additional lesson
