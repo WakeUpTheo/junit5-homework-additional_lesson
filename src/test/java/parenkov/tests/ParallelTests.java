@@ -8,8 +8,13 @@ public class ParallelTests extends TestBase {
 
     Objects search = new Objects();
 
-    @ValueSource(strings = {"Github", "Habr", "Stack Overflow", "Telegram"})
-    @ParameterizedTest(name = "Google search: {0}")
+    @ValueSource(strings = {
+            "Github",
+            "Habr",
+            "Stack Overflow",
+            "Telegram"
+    })
+    @ParameterizedTest
     void googleTest(String searchQuery) {
         search.openGoogle();
         search.doSearch(searchQuery);
