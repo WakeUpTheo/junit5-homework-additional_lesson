@@ -8,8 +8,8 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class Objects {
 
-    private SelenideElement searchField = $("[name=q]");
-    private SelenideElement result = $(".eqAnXb h3");
+    private static SelenideElement searchField = $("[name=q]");
+    private static SelenideElement result = $(".eqAnXb h3");
 
     public void openGoogle() {
         open("https://www.google.com/");
