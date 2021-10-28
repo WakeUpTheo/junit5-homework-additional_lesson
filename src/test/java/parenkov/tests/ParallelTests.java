@@ -16,7 +16,7 @@ public class ParallelTests extends TestBase {
     })
     @ParameterizedTest
     void googleTest(String searchQuery) {
-        search.openGoogle();
+        search.openGoogleMainPage();
         search.doSearch(searchQuery);
         search.checkResults(searchQuery);
     }
