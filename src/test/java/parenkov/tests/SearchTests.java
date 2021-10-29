@@ -10,6 +10,7 @@ public class SearchTests {
 
     Objects search = new Objects();
 
+    // Тесты запускаются параллельно за счет настроек в файле .properties
     @ValueSource(strings = {
             "Github",
             "Habr",
