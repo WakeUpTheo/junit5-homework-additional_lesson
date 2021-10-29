@@ -1,10 +1,12 @@
 package parenkov.tests;
 
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import parenkov.objects.Objects;
 
-public class ParallelTests extends TestBase {
+public class SearchTests {
 
     Objects search = new Objects();
 
@@ -14,8 +16,9 @@ public class ParallelTests extends TestBase {
             "Stack Overflow",
             "Telegram"
     })
+    @Execution(value = ExecutionMode.SAME_THREAD)
     @ParameterizedTest
-    void googleTest(String searchQuery) {
+    void googleSearchTest(String searchQuery) {
         search.openGoogleMainPage();
         search.doSearch(searchQuery);
         search.checkResults(searchQuery);

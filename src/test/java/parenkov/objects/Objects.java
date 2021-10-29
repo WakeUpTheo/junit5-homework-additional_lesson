@@ -13,24 +13,26 @@ public class Objects {
     private static SelenideElement result = $(".eqAnXb h3");
     private static SelenideElement googleAppsButton = $(".gb_C");
     private static SelenideElement hoverHint = $(".gb_Ke");
+    private static SelenideElement signInButton = $(".gb_3");
 
     public void openGoogleMainPage() {
-
         open("https://www.google.com/");
     }
 
     public void doSearch(String value) {
-
         searchField.setValue(value).pressEnter();
     }
 
     public void checkResults(String value) {
-
         result.shouldHave(text(value));
     }
 
     public void toHoverOnButton() {
         googleAppsButton.hover();
+    }
+
+    public void toHoverOnOtherButton() {
+        signInButton.hover();
     }
 
     public void checkHoverHint() {
@@ -42,7 +44,7 @@ public class Objects {
         googleAppsButton.click();
     }
 
-    public void checkDisappearingHoverHint() {
+    public void checkNotVisibleHoverHint() {
         hoverHint.shouldNotBe(visible);
     }
 }
