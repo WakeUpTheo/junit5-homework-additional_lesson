@@ -9,11 +9,11 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class Objects {
 
-    private static SelenideElement searchField = $("[name=q]");
-    private static SelenideElement result = $(".eqAnXb h3");
-    private static SelenideElement googleAppsButton = $(".gb_C");
-    private static SelenideElement hoverHint = $(".gb_Ke");
-    private static SelenideElement signInButton = $(".gb_3");
+    private SelenideElement searchField = $("[name=q]");
+    private SelenideElement result = $(".eqAnXb h3");
+    private SelenideElement googleAppsButton = $(".gb_C");
+    private SelenideElement hoverHint = $(".gb_Ke");
+    private SelenideElement signInButton = $(".gb_3");
 
     public void openGoogleMainPage() {
         open("https://www.google.com/");

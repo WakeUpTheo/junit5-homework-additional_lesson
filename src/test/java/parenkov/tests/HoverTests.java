@@ -20,6 +20,7 @@ public class HoverTests extends TestBase {
         search.checkNotVisibleHoverHint();
     }
 
+    @Execution(value = ExecutionMode.SAME_THREAD)
     @Test
     void googleHoverTest1() {
         search.openGoogleMainPage();
