@@ -9,7 +9,6 @@ public class HoverTests extends TestBase {
 
     Objects search = new Objects();
 
-
     @Test
     void googleHoverTest0() {
         search.openGoogleMainPage();
