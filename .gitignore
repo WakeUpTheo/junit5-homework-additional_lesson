@@ -24,10 +24,10 @@ hs_err_pid*
 
 #other project files
 .idea
-*.iml
-.gradle
-gradle
-build
+.gradle/
+gradle/
+build/
 /gradlew
 /gradlew.bat
-.allure
+.allure/
+allure-results/

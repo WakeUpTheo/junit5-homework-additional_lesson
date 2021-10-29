@@ -5,7 +5,7 @@ import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import parenkov.objects.Objects;
 
-public class HoverTests {
+public class HoverTests extends TestBase {
 
     Objects search = new Objects();
 
@@ -20,7 +20,6 @@ public class HoverTests {
         search.checkNotVisibleHoverHint();
     }
 
-    @Execution(value = ExecutionMode.SAME_THREAD)
     @Test
     void googleHoverTest1() {
         search.openGoogleMainPage();

@@ -6,7 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import parenkov.objects.Objects;
 
-public class SearchTests {
+public class SearchTests extends TestBase {
 
     Objects search = new Objects();
 
