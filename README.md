@@ -1,1 +1,1 @@
-# Junit5 homework. Additional lesson
+# Junit5 homework. Additional lesson. Parallel tests
